@@ -5,7 +5,7 @@
   <title>fetchの使い方</title>
 </head>
 <body>
-  <h1>Fetchでデータを読み込む（関数）-災害伝承碑1-3</h1>
+  <h1>Fetchでデータを読み込む（関数）-災害伝承碑1-4</h1>
   <script>
     //Var FileName='test.json';
     var array;
@@ -30,11 +30,14 @@
                 //}
                 //alert(markerList);
     async function getMarkerData() {
-       try {
+       markerList= new array
+      　try {
             const response = await fetch("test2.json");
             const data = await response.json();
-            alert(data[0].name);
-        } 
+            for(i=0; i=data.length;i++){
+               alert(data[i].name);
+            }
+            } 
        catch (error) {
             alert('error');
         }
