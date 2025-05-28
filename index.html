@@ -5,7 +5,7 @@
   <title>fetchの使い方</title>
 </head>
 <body>
-  <h1>Fetchでデータを読み込む（関数）-災害伝承碑3-</h1>
+  <h1>Fetchでデータを読み込む（関数）-災害伝承碑4-</h1>
   <script>
     //Var FileName='test.json';
     getMarkerData();
@@ -19,6 +19,7 @@
               })
               //取得したデータは連想配列
               .then(array => {
+                var markerList;
                 for (var i = 0; i < array.length; i++) {
                  alert('ファイルの読み込み成功しましたよ。' + array[i].id + ',' + array[i].name + ',' + array[i].address + '\n')
                   markerList[i][0]=array[i].areaid;
