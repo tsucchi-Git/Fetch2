@@ -21,7 +21,7 @@
               //取得したデータは連想配列
               .then(array => {
                 for (var i = 0; i < array.length; i++) {
-                  // alert('ファイルの読み込み成功しましたよ。' + markerList[i].id + ',' + markerList[i].name + ',' + markerList[i].address + '\n')
+                 alert('ファイルの読み込み成功しましたよ。' + markerList[i].id + ',' + markerList[i].name + ',' + markerList[i].address + '\n')
                   markerList[i][0]=array[i].areaid;
                   markerList[i][1]=array[i].id;
                   markerList[i][2]=array[i].name;
@@ -37,8 +37,10 @@
                   markerList[i][12]=array[i].link1;
                   markerList[i][13]=array[i].link2;
                 }
-              })    //通信にエラーが発生した場合
-      .catch(error => {alert('ファイルを読み込むことができませんでした。')})
+                alert(markerList);
+              })    
+              //通信にエラーが発生した場合
+              .catch(error => {alert('ファイルを読み込むことができませんでした。')})
     }
 </script>  
 </body>
