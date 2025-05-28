@@ -5,13 +5,13 @@
   <title>fetchの使い方</title>
 </head>
 <body>
-  <h1>Fetchでデータを読み込む（関数）6</h1>
+  <h1>Fetchでデータを読み込む（関数）-災害伝承碑-</h1>
   <script>
     //Var FileName='test.json';
     getMarkerData();
     function getMarkerData()　{
     //urlからデータを読み込む
-      fetch('test.json')
+      fetch('test2.json')
     //データを受け取って、加工・成形
       .then(response => {
         //jsonはオブジェクト（連想配列）
@@ -20,7 +20,7 @@
       //取得したデータは連想配列
       .then(markerList => {
         for (var i = 0; i < markerList.length; i++) {
-          alert('ファイルの読み込み成功しましたよ。' + markerList[i].id + ',' + markerList[i].name + ',' +　markerList[i].age + '\n')
+          alert('ファイルの読み込み成功しましたよ。' + markerList[i].id + ',' + markerList[i].name + ',' +　markerList[i].address + '\n')
         //document.write(markerList[i]['id'])
         }
         
