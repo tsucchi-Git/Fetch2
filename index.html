@@ -22,10 +22,10 @@
                 var markerList;
                 for (var i = 0; i < array.length; i++) {
                  alert('ファイルの読み込み成功しましたよ。' + array[i].id + ',' + array[i].name + ',' + array[i].address + '\n')
-                  let markerList[i][0]=array[i].areaid;
-                  let markerList[i][1]=array[i].id;
-                  let markerList[i][2]=array[i].name;
-                  let markerList[i][3]=array[i].lon;
+                  //let markerList[i][0]=array[i].areaid;
+                  //let markerList[i][1]=array[i].id;
+                  //let markerList[i][2]=array[i].name;
+                  //let markerList[i][3]=array[i].lon;
                   //markerList[i][4]=array[i].lng;
                   //markerList[i][5]=array[i].era;
                   //markerList[i][6]=array[i].address;
@@ -37,7 +37,7 @@
                   //markerList[i][12]=array[i].link1;
                   //markerList[i][13]=array[i].link2;
                 }
-                alert(markerList);
+                //alert(markerList);
               })    
               //通信にエラーが発生した場合
               .catch(error => {alert('ファイルを読み込むことができませんでした。')})
