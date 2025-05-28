@@ -5,7 +5,7 @@
   <title>fetchの使い方</title>
 </head>
 <body>
-  <h1>Fetchでデータを読み込む（関数）-災害伝承碑1-1-</h1>
+  <h1>Fetchでデータを読み込む（関数）-災害伝承碑1-2</h1>
   <script>
     //Var FileName='test.json';
     var array;
@@ -33,7 +33,7 @@
        try {
             const response = await fetch("test2.json");
             const data = await response.json();
-            alert(data);
+            alert('success');
         } 
        catch (error) {
             alert('error');
