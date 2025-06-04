@@ -5,11 +5,11 @@
   <title>fetchの使い方</title>
 </head>
 <body>
-  <h1>Fetchでデータを読み込む（関数）-災害伝承碑2-2</h1>
+  <h1>Fetchでデータを読み込む（関数）-災害伝承碑2-3</h1>
   <script>
     //Var FileName='test.json';
     var array;
-    getMarkerData();
+    getMarkerData(array);
     for(i=0;i<array.length;i++){
       alert(array[i].id + ',' + array[i].name +array[i].file);
     };
@@ -46,7 +46,7 @@
     //        alert('error');
     //    }
     //  }
-     function getMarkerData()　{
+     function getMarkerData(array)　{
              //urlからデータを読み込む
              fetch('test2.json')
              //データを受け取って、加工・成形
