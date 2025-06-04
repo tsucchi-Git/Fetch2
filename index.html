@@ -28,35 +28,35 @@
                   //markerList[i][13]=array[i].link2;
                 //}
                 //alert(markerList);
-    async function getMarkerData() {
-       markerList= new array
-      　try {
-            const response = await fetch("test2.json");
-            const data = await response.json();
-           alert(data.length)
-            //for(i=0; i=data.length;i++){
-               alert(data[3].name);
+    //async function getMarkerData() {
+    //   markerList= new array
+    //  　try {
+    //        const response = await fetch("test2.json");
+    //        const data = await response.json();
+    //       alert(data.length)
+    //        //for(i=0; i=data.length;i++){
+    //           alert(data[3].name);
             //}
-            } 
-       catch (error) {
-            alert('error');
-        }
-      }
-    // function getMarkerData()　{
-    //         //urlからデータを読み込む
-    //         fetch('test2.json')
-    //         //データを受け取って、加工・成形
-    //           .then(response => {
-    //             //jsonはオブジェクト（連想配列）
-    //             return response.json()
-    //           })
-    //           //取得したデータは連想配列
-    //           .then(array => {
-    //             alert('ファイルの読み込みは成功しました')
-    //           })    
-    //           //通信にエラーが発生した場合
-    //           .catch(error => {alert('ファイルを読み込むことができませんでした。')})
-    // }
+    //        } 
+    //   catch (error) {
+    //        alert('error');
+    //    }
+    //  }
+     function getMarkerData()　{
+             //urlからデータを読み込む
+             fetch('test2.json')
+             //データを受け取って、加工・成形
+               .then(response => {
+                 //jsonはオブジェクト（連想配列）
+                 return response.json()
+               })
+               //取得したデータは連想配列
+               .then(array => {
+                 alert('ファイルの読み込みは成功しました')
+               })    
+               //通信にエラーが発生した場合
+               .catch(error => {alert('ファイルを読み込むことができませんでした。')})
+     }
 </script>  
 </body>
 </html>
