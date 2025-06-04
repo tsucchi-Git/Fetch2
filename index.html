@@ -8,7 +8,11 @@
   <h1>Fetchでデータを読み込む（関数）-災害伝承碑2-1</h1>
   <script>
     //Var FileName='test.json';
+    var array;
     getMarkerData();
+    for(i=0;i<array.length;i++){
+      alert(array[i].id + ',' + array[i].name +array[i].file);
+    };
     //alert('return main');
               //for (var i = 0; i < array.length; i++) {
                  //alert('ファイルの読み込み成功しましたよ。' + array[i].id + ',' + array[i].name + ',' + array[i].address + '\n')
