@@ -11,7 +11,7 @@
     var array;
     getMarkerData(array);
     for(i=0;i<array.length;i++){
-      alert(array[i].id + ',' + array[i].name +array[i].file);
+      alert(array[i].id + ',' + array[i].name + ',' + array[i].file);
     };
     //alert('return main');
               //for (var i = 0; i < array.length; i++) {
@@ -56,7 +56,8 @@
                })
                //取得したデータは連想配列
                .then(array => {
-                 alert('ファイルの読み込みは成功しました')
+                 alert('ファイルの読み込みは成功しました');
+                 alert(array.length)
                })    
                //通信にエラーが発生した場合
                .catch(error => {alert('ファイルを読み込むことができませんでした。')})
